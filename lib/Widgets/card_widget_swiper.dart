@@ -20,7 +20,193 @@ class CardWidgtSwiper extends StatelessWidget {
         child: ListView(
           children: [
         _card_scroll(context),
+            Flexible(
+                flex: 1,
+                fit: FlexFit.tight,
+                child: Container(
+                  padding: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(20),
+                  child: Column(
+                    children: [
+                      Text("producto.ca + " " + user.firstname"),
+                      Text("user.role + " " + user.age.toString()"),
+                      Text("user.email"),
+                      Text("user.addess"),
+                      ExpansionTile(
+                        title: Text(
+                          "SmartPhones",
+                          style: TextStyle(
+                              color: Colors.green,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        children: <Widget>[
+                          Container(
+                            alignment: Alignment.topLeft,
+                            padding: const EdgeInsets.all(16.0),
+                            child: Text(
+                           "   user.telefon",
+                              style: TextStyle(
+                                  color: Color.fromRGBO(
+                                      255, 255, 255, 0.77)),
+                            ),
+                          )
+                        ],
+                      ),
+                      ExpansionTile(
+                        title: Text(
+                          "Portatiles",
+                          style: TextStyle(
+                              color: Colors.green,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        children: <Widget>[
+                          Container(
+                            alignment: Alignment.topLeft,
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              children: [
+                                Row(
+                                  mainAxisAlignment:
+                                  MainAxisAlignment.spaceAround,
+                                  children: const <Widget>[
+                                    Icon(
+                                      Icons.favorite,
+                                      color: Colors.pink,
+                                      size: 24.0,
+                                      semanticLabel:
+                                      'Text to announce in accessibility modes',
+                                    ),
+                                    Icon(
+                                      Icons.audiotrack,
+                                      color: Colors.green,
+                                      size: 30.0,
+                                    ),
+                                    Icon(
+                                      Icons.beach_access,
+                                      color: Colors.blue,
+                                      size: 36.0,
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    TextButton.icon(
+                                        onPressed: () {},
+                                        icon: Icon(Icons.add),
+                                        label: Text(
+                                            "añadir a mis contactos"))
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    TextButton.icon(
+                                        onPressed: () {},
+                                        icon: Icon(Icons.precision_manufacturing_rounded),
+                                        label: Text(
+                                            "Ver Proyectos"))
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    TextButton.icon(
+                                        onPressed: () {},
+                                        icon: Icon(Icons.help_outline),
+                                        label: Text(
+                                            "Aboute mi"))
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      ExpansionTile(
+                        title: Text(
+                          "Accesorios",
+                          style: TextStyle(
+                              color: Colors.green,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        children: <Widget>[
+                          Container(
+                            alignment: Alignment.topLeft,
+                            padding: const EdgeInsets.all(16.0),
+                            child: Column(
+                              children: [
+                                Row(
+                                  mainAxisAlignment:
+                                  MainAxisAlignment.spaceAround,
+                                  children: const <Widget>[
+                                    Icon(
+                                      Icons.favorite,
+                                      color: Colors.pink,
+                                      size: 24.0,
+                                      semanticLabel:
+                                      'Text to announce in accessibility modes',
+                                    ),
+                                    Icon(
+                                      Icons.audiotrack,
+                                      color: Colors.green,
+                                      size: 30.0,
+                                    ),
+                                    Icon(
+                                      Icons.beach_access,
+                                      color: Colors.blue,
+                                      size: 36.0,
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    TextButton.icon(
+                                        onPressed: () {},
+                                        icon: Icon(Icons.add),
+                                        label: Text(
+                                            "añadir a mis contactos"))
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    TextButton.icon(
+                                        onPressed: () {},
+                                        icon: Icon(Icons.precision_manufacturing_rounded),
+                                        label: Text(
+                                            "Ver Proyectos"))
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    TextButton.icon(
+                                        onPressed: () {},
+                                        icon: Icon(Icons.help_outline),
+                                        label: Text(
+                                            "Aboute mi"))
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
 
+                  decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 5,
+                          blurRadius: 5,
+                          offset: Offset(0, 3), // changes position of shadow
+                        ),
+                      ],
+                      border: Border.all(
+                          color: Color.fromRGBO(
+                              255, 255, 255, 0.23)),
+                      borderRadius: BorderRadius.circular(10),
+                      color: Color.fromRGBO(77, 77, 77, 0.33)),
+                ) //BoxDecoration
+            )
           ],
         ));
   }

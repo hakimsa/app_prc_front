@@ -48,12 +48,17 @@ class _UsersCardState extends State<UsersCard> {
                       ),
                       decoration: BoxDecoration(
                           image: DecorationImage(
-                              image: NetworkImage(
-                                  users[index].avatar
-                              ),
-                              fit: BoxFit.cover),
-                          color: Color.fromRGBO(77, 77, 87, 0.35),
-                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                              image: NetworkImage(users[index].avatar)
+                              ,fit: BoxFit.cover),
+                          gradient: LinearGradient(
+                              colors: [
+                                Colors.white,
+                                Colors.white,
+                                Colors.orangeAccent
+                              ]
+                          ),
+                          borderRadius: BorderRadius.circular(26)
+                      ),
                       child: Stack(
                         children: [
                           Positioned(

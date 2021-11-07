@@ -11,6 +11,7 @@ class Provider{
     return productos.items;
 
   }
+
   Future<List<Producto>> buscarProducto( String query ) async {
     var url ="https://hakim-backend-productos.herokuapp.com/producto/"+query;
     final respuesta = await http.get(url);

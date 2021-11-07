@@ -31,7 +31,7 @@ class _ProdutoItemState extends State<ProdutoItem> {
 
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: NetworkImage("https://www.islamicity.org/wp-content/plugins/blueprint-timthumb/timthumb.php?src=http://www.islamicity.org/global/images/photo/IC-Articles/andalucia__1024x585.JPG&w=1200&h=675&q=100")
+          image: NetworkImage("")
         ,fit: BoxFit.cover),
         gradient: LinearGradient(
           colors: [

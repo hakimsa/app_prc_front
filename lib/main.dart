@@ -1,4 +1,5 @@
 
+import 'package:carde/Views/login_page.dart';
 import 'package:flutter/material.dart';
 
 import 'Paths/Root.dart';
@@ -20,6 +21,6 @@ class MyApp extends StatelessWidget {
       title: 'Card exmpl',
       theme: theme
       ,
-     initialRoute: BottomNavBar.pagename,
+     initialRoute: LoginPage.pagename,
      routes: get_application_path(),
     );}}
